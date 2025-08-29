@@ -45,20 +45,20 @@ function App() {
   const randomEvent = (state) => {
   const distributions = {
     OK: {
-      ping_ok: 0.8,
+      ping_ok: 0.83,
       latency_high: 0.1,
       packet_loss_high: 0.05,
       suspicious_traffic: 0.05,
     },
     WARN: {
-      ping_ok: 0.5,
+      ping_ok: 0.7,
       latency_high: 0.2,
       packet_loss_high: 0.2,
       ping_timeout: 0.1,
       suspicious_traffic: 0.0, // optional, you can include if needed
     },
     ERROR: {
-      ping_timeout: 0.6,
+      ping_timeout: 0.4,
       packet_loss_high: 0.2,
       suspicious_traffic: 0.1,
       latency_high: 0.1,
